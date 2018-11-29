@@ -50,6 +50,13 @@ app.get('/api/protected', jwtAuth, (req, res) => {
   });
 });
 
+// -> =>
+app.post('/api/dashboard', jwtAuth, (req, res) => {
+  return res.json({
+    data: 'kiwi'
+  });
+});
+
 app.use('*', (req, res) => {
   return res.status(404).json({ message: 'Not Found' });
 });

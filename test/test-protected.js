@@ -138,7 +138,7 @@ describe('Protected endpoint', function () {
         {
           algorithm: 'HS256',
           subject: username,
-          expiresIn: '7d'
+          expiresIn: '1m'
         }
       );
 
